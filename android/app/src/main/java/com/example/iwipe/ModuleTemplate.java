@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 public class ModuleTemplate extends FlutterActivity {
-    Button content1Button:
+    Button content1Button;
     Button content2;
     Button content3;
     Button PaymentButton;
@@ -19,7 +19,7 @@ public class ModuleTemplate extends FlutterActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ModuleTemplate);
+       // setContentView(R.layout.ModuleTemplate);
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,19 +46,19 @@ public class ModuleTemplate extends FlutterActivity {
         });
     }
     public void switchHome(){
-        Intent SwitchHomeScreen = new Intent(this, HomePage.class);
-        startActivity(SwitchHomeScreen);
+      //  Intent SwitchHomeScreen = new Intent(this, HomePage.class);
+       // startActivity(SwitchHomeScreen);
     }
     public void switchProgress(){
-        Intent SwitchProgress = new Intent(this, progressScreen.class);
-        startActivity(SwitchProgress);
+        //Intent SwitchProgress = new Intent(this, progressScreen.class);
+        //startActivity(SwitchProgress);
     }
     public void switchPayment(){
-        Intent SwitchPayment = new Intent(this, paymentScreen.class);
-        startActivity(SwitchPayment);
+        //Intent SwitchPayment = new Intent(this, paymentScreen.class);
+        //startActivity(SwitchPayment);
     }
     public void switchsettings(){
-        Intent SwitchSettings = new Intent(this, SettingsScreen.class);
-        startActivity(SwitchSettings);
+        //Intent SwitchSettings = new Intent(this, SettingsScreen.class);
+        //startActivity(SwitchSettings);
     }
 }

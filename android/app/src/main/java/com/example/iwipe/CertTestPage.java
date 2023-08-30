@@ -19,7 +19,7 @@ public class CertTestPage extends FlutterActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.CertTestPage);
+        //setContentView(R.layout.CertTestPage);
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,19 +47,19 @@ public class CertTestPage extends FlutterActivity {
 
     }
     public void switchHome(){
-        Intent SwitchHomeScreen = new Intent(this, HomePage.class);
-        startActivity(SwitchHomeScreen);
+       // Intent SwitchHomeScreen = new Intent(this, HomePage.class);
+       // startActivity(SwitchHomeScreen);
     }
     public void switchPayment(){
-        Intent SwitchPayment = new Intent(this, paymentScreen.class);
-        startActivity(SwitchPayment);
+       // Intent SwitchPayment = new Intent(this, paymentScreen.class);
+       // startActivity(SwitchPayment);
     }
     public void switchsettings(){
-        Intent SwitchSettings = new Intent(this, SettingsScreen.class);
-        startActivity(SwitchSettings);
+        //Intent SwitchSettings = new Intent(this, SettingsScreen.class);
+        //startActivity(SwitchSettings);
     }
     public void switchProgress(){
-        Intent Switchprogress = new Intent(this, ProgressScreen.class);
-        startActivity(Switchprogress);
+        //Intent Switchprogress = new Intent(this, ProgressScreen.class);
+        //startActivity(Switchprogress);
     }
 }
