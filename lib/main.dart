@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:camera/camera.dart';
+import 'package:flutter/camera.dart';
 
 Future<void> main() async {
   // Ensure that plugin services are initialized so that `availableCameras()`
