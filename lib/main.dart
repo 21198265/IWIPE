@@ -1,19 +1,16 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
-//import 'package:flutter/camera.dart';
+import 'package:device_preview/device_preview.dart';
 
 Future<void> main() async {
-  // Ensure that plugin services are initialized so that `availableCameras()`
-  // can be called before `runApp()`
-  WidgetsFlutterBinding.ensureInitialized();
-
-  // Obtain a list of the available cameras on the device.
-  //final cameras = await availableCameras();
-
-  // Get a specific camera from the list of available cameras.
-  //final firstCamera = cameras.first;
-  runApp(const MyApp());
+  void main() {
+    runApp(DevicePreview(
+      enabled: true,
+      builder: (BuildContext context) => const MyApp(),
+    ));
+  }
+ // runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -23,7 +20,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       title: 'Flutter Demo',
+     // title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
         //
