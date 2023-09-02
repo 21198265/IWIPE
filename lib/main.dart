@@ -3,14 +3,20 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 
-Future<void> main() async {
-  void main() {
-    runApp(DevicePreview(
-      enabled: true,
-      builder: (BuildContext context) => const MyApp(),
-    ));
-  }
+//Future<void> main() async {
+  //void main() {
+    //runApp(DevicePreview(
+      //enabled: true,
+     // builder: (BuildContext context) => const MyApp(),
+   // ));
+ // }
  // runApp(const MyApp());
+//}
+void main() {
+  runApp(DevicePreview(
+    enabled: true,
+    builder: (context) => const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
