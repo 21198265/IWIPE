@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:iwipe/main.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 
 void main() async {
@@ -48,7 +49,7 @@ class CertTestScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
                   child: const Text(
-                    'This is your certification quiz, to pass you must have a score of atleast 50% ',
+                    'Final Evaluation',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w500,
@@ -56,9 +57,25 @@ class CertTestScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                ProgressIndicator(
-
+                Container(
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.all(10),
+                  child: const Text(
+                    'You Will have 60 minutes to complete the exam, there are 50 multiple-choice questions worth 1 mark each you must score 98% or higher to pass',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 30,
+                    ),
+                  ),
                 ),
+             LinearPercentIndicator(
+              width: 140.0,
+              lineHeight: 14.0,
+              percent: 0.5,
+              backgroundColor: Colors.grey,
+              progressColor: Colors.blue,
+              ),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
@@ -101,31 +118,30 @@ class CertTestScreen extends StatelessWidget {
                     },
                     child: const Text('Payment'),
                   ),
-                  ElevatedButton(
+                FloatingActionButton(
                     onPressed: () {
                       Navigator.pushNamed(context, '');
                     },
                     child: const Text('Progress'),
                   ),
-                  ElevatedButton(
+                FloatingActionButton(
                     onPressed: () {
                       Navigator.pushNamed(context, '/IDSelectScreen');
                     },
                     child: const Text('Home'),
                   ),
-                  ElevatedButton(
+                  FloatingActionButton(
                     onPressed: () {
                       Navigator.pushNamed(context, '');
                     },
                     child: const Text('Notifications'),
                   ),
-                  ElevatedButton(
+                  FloatingActionButton(
                     onPressed: () {
                       Navigator.pushNamed(context, '');
                     },
                     child: const Text('Settings'),
                   ),
-                ),
               ],
             ),
           ),

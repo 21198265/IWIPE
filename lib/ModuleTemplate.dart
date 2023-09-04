@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:iwipe/main.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 
 void main() async {
@@ -58,13 +59,58 @@ class ModuleTemplate extends StatelessWidget {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
                   child: const Text(
-                    'Living room progress:',
+                    'Cleaning 1:',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w500,
                       fontSize: 20,
                     ),
                   ),
+                ),
+                LinearPercentIndicator(
+                  width: 140.0,
+                  lineHeight: 14.0,
+                  percent: 0.5,
+                  backgroundColor: Colors.grey,
+                  progressColor: Colors.blue,
+                ),
+                Container(
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.all(10),
+                  child: const Text(
+                    'Cleaning 2:',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+                LinearPercentIndicator(
+                  width: 140.0,
+                  lineHeight: 14.0,
+                  percent: 0.5,
+                  backgroundColor: Colors.grey,
+                  progressColor: Colors.green,
+                ),
+                Container(
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.all(10),
+                  child: const Text(
+                    'Cleaning 3:',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+                LinearPercentIndicator(
+                  width: 140.0,
+                  lineHeight: 14.0,
+                  percent: 0.5,
+                  backgroundColor: Colors.grey,
+                  progressColor: Colors.green,
                 ),
                 Container(
                   alignment: Alignment.center,
@@ -78,31 +124,34 @@ class ModuleTemplate extends StatelessWidget {
                     ),
                   ),
                 ),
-                ElevatedButton(
+                const Image(
+                  image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+                ),
+                FloatingActionButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/IDSelectScreen');
                   },
                   child: const Text('Payment'),
                 ),
-                ElevatedButton(
+                FloatingActionButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '');
                   },
                   child: const Text('Progress'),
                 ),
-                ElevatedButton(
+                FloatingActionButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/IDSelectScreen');
                   },
                   child: const Text('Home'),
                 ),
-                ElevatedButton(
+                FloatingActionButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '');
                   },
                   child: const Text('Notifications'),
                 ),
-                ElevatedButton(
+                FloatingActionButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '');
                   },
