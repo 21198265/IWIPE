@@ -72,7 +72,7 @@ class ModuleTemplate extends StatelessWidget {
                   lineHeight: 14.0,
                   percent: 0.5,
                   backgroundColor: Colors.grey,
-                  progressColor: Colors.blue,
+                  progressColor: Colors.green,
                 ),
                 Container(
                   alignment: Alignment.center,
