@@ -1,6 +1,9 @@
+import 'dart:async';
+import 'dart:io';
 import 'package:flutter/material.dart';
-import 'SignIn.dart';
-import 'SignUp.dart';
+
+
+
 
 void main() async {
   runApp(const MyApp());
@@ -16,15 +19,14 @@ class MyApp extends StatelessWidget {
       title: _title,
       initialRoute: '/', // Specify the initial route
       routes: {
-        '/': (context) => HomeScreen(),
-        '/SignIn': (context) => SignIn(),
+        '/': (context) => IDSelectScreen(),
+        //'/SignIn': (context) => SignIn(),
       },
     );
   }
 }
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class IDSelectScreen extends StatelessWidget {
+  const IDSelectScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
                   child: const Text(
-                    'Welcome to IWipe',
+                    'Please Select an ID form to scan',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w500,
@@ -55,9 +57,21 @@ class HomeScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/SignIn');
+                    Navigator.pushNamed(context, '');
                   },
-                  child: const Text('Open Sign In Page'),
+                  child: const Text('Drivers Licence'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '');
+                  },
+                  child: const Text('Passport'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '');
+                  },
+                  child: const Text('ID Card'),
                 ),
               ],
             ),

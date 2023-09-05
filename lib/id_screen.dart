@@ -1,6 +1,8 @@
+import 'dart:async';
+import 'dart:io';
 import 'package:flutter/material.dart';
-import 'SignIn.dart';
-import 'SignUp.dart';
+import 'IDSelectScreen.dart';
+
 
 void main() async {
   runApp(const MyApp());
@@ -16,15 +18,15 @@ class MyApp extends StatelessWidget {
       title: _title,
       initialRoute: '/', // Specify the initial route
       routes: {
-        '/': (context) => HomeScreen(),
-        '/SignIn': (context) => SignIn(),
+        '/': (context) => IDScreen(),
+        '/IDSelectScreen': (context) => IDSelectScreen(),
       },
     );
   }
 }
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class IDScreen extends StatelessWidget {
+  const IDScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
                   child: const Text(
-                    'Welcome to IWipe',
+                    'An ID is needed for your account',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w500,
@@ -55,9 +57,15 @@ class HomeScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/SignIn');
+                    Navigator.pushNamed(context, '/IDSelectScreen');
                   },
-                  child: const Text('Open Sign In Page'),
+                  child: const Text('Select ID'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '');
+                  },
+                  child: const Text('I dont have ID'),
                 ),
               ],
             ),
