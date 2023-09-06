@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'SignIn.dart';
 import 'SignUp.dart';
+import 'package:device_preview/device_preview.dart';
 
 void main() async {
+   //runApp(DevicePreview(
+   // enabled: true,
+   //builder: (context) => const MyApp(),
+  //));
   runApp(const MyApp());
 }
 

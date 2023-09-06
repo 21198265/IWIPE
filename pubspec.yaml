@@ -17,6 +17,8 @@ dependencies:
   camera:
   path_provider:
   path:
+  device_preview: ^1.1.0
+  percent_indicator: ^4.2.3
 
 
 
@@ -24,7 +26,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  percent_indicator: ^4.0.1
 
   flutter_lints: ^2.0.0
 
