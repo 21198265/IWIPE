@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:device_preview/device_preview.dart';
 
-
-
 void main() async {
  // runApp(DevicePreview(
   //  enabled: true,
@@ -24,15 +22,19 @@ class MyApp extends StatelessWidget {
       title: _title,
       initialRoute: '/', // Specify the initial route
       routes: {
-        '/': (context) => ModuleTemplate(),
-        //'/SignIn': (context) => SignIn(),
+        '/': (context) => Kitchen(),
+        //'/Payment': (context) => PaymentScreen(),
+        //'/Notifications': (context) => NotificationScreen(),
+        //'/home': (context) => HomeScreen(),
+        //'/settings': (context) => settingsScreen(),
+        //'/Progress': (context) => ProgressScreen(),
       },
     );
   }
 }
 
-class ModuleTemplate extends StatelessWidget {
-  const ModuleTemplate({Key? key}) : super(key: key);
+class Kitchen extends StatelessWidget {
+  const Kitchen({Key? key}) : super(key: key);
   static const String _title = 'IWipe';
 
   get image => null;

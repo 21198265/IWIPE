@@ -24,15 +24,19 @@ class MyApp extends StatelessWidget {
       title: _title,
       initialRoute: '/', // Specify the initial route
       routes: {
-        '/': (context) => ModuleTemplate(),
-        //'/SignIn': (context) => SignIn(),
+        '/': (context) => BathRoom(),
+        //'/Payment': (context) => PaymentScreen(),
+        //'/Notifications': (context) => NotificationScreen(),
+        //'/home': (context) => HomeScreen(),
+        //'/settings': (context) => settingsScreen(),
+        //'/Progress': (context) => ProgressScreen(),
       },
     );
   }
 }
 
-class ModuleTemplate extends StatelessWidget {
-  const ModuleTemplate({Key? key}) : super(key: key);
+class BathRoom extends StatelessWidget {
+  const BathRoom({Key? key}) : super(key: key);
   static const String _title = 'IWipe';
 
   get image => null;
