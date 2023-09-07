@@ -7,13 +7,12 @@ import 'package:device_preview/device_preview.dart';
 
 
 void main() async {
- // runApp(DevicePreview(
+  // runApp(DevicePreview(
   //  enabled: true,
-   // builder: (context) => const MyApp(),
+  // builder: (context) => const MyApp(),
   //));
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   static const String _title = 'IWipe';
@@ -24,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: _title,
       initialRoute: '/', // Specify the initial route
       routes: {
-        '/': (context) => LivingRoom(),
+        '/': (context) => CongratsScreen(),
         //'/Payment': (context) => PaymentScreen(),
         //'/Notifications': (context) => NotificationScreen(),
         //'/home': (context) => HomeScreen(),
@@ -35,8 +34,8 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class LivingRoom extends StatelessWidget {
-  const LivingRoom({Key? key}) : super(key: key);
+class CongratsScreen extends StatelessWidget {
+  const CongratsScreen({Key? key}) : super(key: key);
   static const String _title = 'IWipe';
 
   get image => null;
@@ -45,7 +44,9 @@ class LivingRoom extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // Add a MaterialApp here as well
-      home:  Scaffold(
+      home: Directionality(
+        textDirection: TextDirection.ltr,
+        child: Scaffold(
           appBar: AppBar(
             title: const Text('Living room'),
             backgroundColor: Color(0xffB8E28A),
@@ -61,68 +62,11 @@ class LivingRoom extends StatelessWidget {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
                   child: const Text(
-                    'Cleaning TV:',
+                    'Congratulations, you have passed the test:',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w500,
                       fontSize: 20,
-                    ),
-                  ),
-                ),
-                LinearPercentIndicator(
-                  width: 140.0,
-                  lineHeight: 14.0,
-                  percent: 0.5,
-                  backgroundColor: Colors.grey,
-                  progressColor: Colors.blue,
-                ),
-                Container(
-                  alignment: Alignment.center,
-                  padding: const EdgeInsets.all(10),
-                  child: const Text(
-                    'Cleaning Carpet:',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 20,
-                    ),
-                  ),
-                ),
-                LinearPercentIndicator(
-                  width: 140.0,
-                  lineHeight: 14.0,
-                  percent: 0.5,
-                  backgroundColor: Colors.grey,
-                  progressColor: Colors.green,
-                ),
-                Container(
-                  alignment: Alignment.center,
-                  padding: const EdgeInsets.all(10),
-                  child: const Text(
-                    'Cleaning Sofas:',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 20,
-                    ),
-                  ),
-                ),
-                LinearPercentIndicator(
-                  width: 140.0,
-                  lineHeight: 14.0,
-                  percent: 0.5,
-                  backgroundColor: Colors.grey,
-                  progressColor: Colors.green,
-                ),
-                Container(
-                  alignment: Alignment.center,
-                  padding: const EdgeInsets.all(10),
-                  child: const Text(
-                    'To see more, please click a button',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 30,
                     ),
                   ),
                 ),
@@ -163,7 +107,7 @@ class LivingRoom extends StatelessWidget {
             ),
           ),
         ),
-
+      ),
     );
   }
 }
