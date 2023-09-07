@@ -7,9 +7,9 @@ import 'package:device_preview/device_preview.dart';
 
 
 void main() async {
- // runApp(DevicePreview(
+  // runApp(DevicePreview(
   //  enabled: true,
-   // builder: (context) => const MyApp(),
+  // builder: (context) => const MyApp(),
   //));
   runApp(const MyApp());
 }
@@ -24,19 +24,15 @@ class MyApp extends StatelessWidget {
       title: _title,
       initialRoute: '/', // Specify the initial route
       routes: {
-        '/': (context) => LivingRoom(),
-        //'/Payment': (context) => PaymentScreen(),
-        //'/Notifications': (context) => NotificationScreen(),
-        //'/home': (context) => HomeScreen(),
-        //'/settings': (context) => settingsScreen(),
-        //'/Progress': (context) => ProgressScreen(),
+        '/': (context) => ModuleTemplate(),
+        //'/SignIn': (context) => SignIn(),
       },
     );
   }
 }
 
-class LivingRoom extends StatelessWidget {
-  const LivingRoom({Key? key}) : super(key: key);
+class ModuleTemplate extends StatelessWidget {
+  const ModuleTemplate({Key? key}) : super(key: key);
   static const String _title = 'IWipe';
 
   get image => null;
@@ -45,7 +41,7 @@ class LivingRoom extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // Add a MaterialApp here as well
-      home:  Scaffold(
+      home: Scaffold(
           appBar: AppBar(
             title: const Text('Living room'),
             backgroundColor: Color(0xffB8E28A),
@@ -166,4 +162,3 @@ class LivingRoom extends StatelessWidget {
 
     );
   }
-}
