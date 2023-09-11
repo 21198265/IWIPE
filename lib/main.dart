@@ -4,11 +4,11 @@ import 'SignUp.dart';
 import 'package:device_preview/device_preview.dart';
 
 void main() async {
-   runApp(DevicePreview(
-    enabled: true,
-   builder: (context) => const MyApp(),
-  ));
-  //runApp(const MyApp());
+  //runApp(DevicePreview(
+  // enabled: true,
+  //builder: (context) => const MyApp(),
+  //));
+  runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

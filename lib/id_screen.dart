@@ -32,9 +32,7 @@ class IDScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // Add a MaterialApp here as well
-      home: Directionality(
-        textDirection: TextDirection.ltr,
-        child: Scaffold(
+      home:  Scaffold(
           appBar: AppBar(
             title: const Text('IWipe'),
             backgroundColor: Color(0xffB8E28A),
@@ -71,7 +69,7 @@ class IDScreen extends StatelessWidget {
             ),
           ),
         ),
-      ),
+
     );
   }
 }
