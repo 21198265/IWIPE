@@ -1,49 +1,14 @@
-import 'dart:async';
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:device_preview/device_preview.dart';
 
-void main() async {
- // runApp(DevicePreview(
-  //  enabled: true,
-   // builder: (context) => const MyApp(),
-  //));
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-  static const String _title = 'IWipe';
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: _title,
-      initialRoute: '/', // Specify the initial route
-      routes: {
-        '/': (context) => Kitchen(),
-        //'/Payment': (context) => PaymentScreen(),
-        //'/Notifications': (context) => NotificationScreen(),
-        //'/home': (context) => HomeScreen(),
-        //'/settings': (context) => settingsScreen(),
-        //'/Progress': (context) => ProgressScreen(),
-      },
-    );
-  }
-}
-
-class Kitchen extends StatelessWidget {
-  const Kitchen({Key? key}) : super(key: key);
-  static const String _title = 'IWipe';
+class ModuleTemplate extends StatelessWidget {
+  const ModuleTemplate({Key? key}) : super(key: key);
 
   get image => null;
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      // Add a MaterialApp here as well
-      home:  Scaffold(
+    return Scaffold(
           appBar: AppBar(
             title: const Text('Living room'),
             backgroundColor: Color(0xffB8E28A),
@@ -127,50 +92,40 @@ class Kitchen extends StatelessWidget {
                 const Image(
                   image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
                 ),
-                IconButton(
-                  iconSize: 35,
-                  icon: const Icon(Icons.account_balance_wallet),
+                FloatingActionButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/IDSelectScreen');
-                    // ...
                   },
+                  child: const Text('Payment'),
                 ),
-                IconButton( // progress button
-                  iconSize: 35,
-                  icon: const Icon(Icons.bar_chart),
+                FloatingActionButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '');
-                    // ...
                   },
+                  child: const Text('Progress'),
                 ),
-                IconButton( // home button
-                  iconSize: 35,
-                  icon: const Icon(Icons.my_location),
+                FloatingActionButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/IDSelectScreen');
+                  },
+                  child: const Text('Home'),
+                ),
+                FloatingActionButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '');
-                    // ...
                   },
+                  child: const Text('Notifications'),
                 ),
-                IconButton( // notification button
-                  iconSize: 72,
-                  icon: const Icon(Icons.notifications),
+                FloatingActionButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '');
-                    // ...
                   },
-                ),
-                IconButton( // settings button
-                  iconSize: 72,
-                  icon: const Icon(Icons.settings),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '');
-                    // ...
-                  },
+                  child: const Text('Settings'),
                 ),
               ],
             ),
           ),
-        ),
+
 
     );
   }

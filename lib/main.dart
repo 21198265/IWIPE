@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'SignIn.dart';
 import 'SignUp.dart';
-import 'package:device_preview/device_preview.dart';
+
 
 void main() async {
   //runApp(DevicePreview(
@@ -10,6 +10,7 @@ void main() async {
   //));
   runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   static const String _title = 'IWipe';
@@ -20,8 +21,9 @@ class MyApp extends StatelessWidget {
       title: _title,
       initialRoute: '/', // Specify the initial route
       routes: {
-        '/': (context) => HomeScreen(),
-        '/SignIn': (context) => SignIn(),
+        '/': (context) => const HomeScreen(),
+        '/SignIn': (context) => const SignIn(),
+        '/SignUp': (context) => const SignUp(),
       },
     );
   }
@@ -32,11 +34,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      // Add a MaterialApp here as well
-      home: Directionality(
-        textDirection: TextDirection.ltr,
-        child: Scaffold(
+    return  Scaffold(
           appBar: AppBar(
             title: const Text('IWipe'),
             backgroundColor: Color(0xffB8E28A),
@@ -66,8 +64,6 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
-        ),
-      ),
     );
   }
 }

@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:device_preview/device_preview.dart';
-import 'SignIn.dart';
-import 'main.dart';
 
   void main() async {
     runApp(const SignUp());
@@ -13,20 +10,13 @@ class SignUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: _title,
-      routes: {
-        '/home': (context) => const HomeScreen(),
-        '/SignIn': (context) => const SignIn(),
-        '/SignUp': (context) => const SignUp(),
-      },
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
             title: const Text(_title),
                 backgroundColor: Color(0xffB8E28A),
         ),
         body: const MySatefulWidget(),
-      ),
+
     );
   }
 }
