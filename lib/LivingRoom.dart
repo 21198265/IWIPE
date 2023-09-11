@@ -131,35 +131,45 @@ class LivingRoom extends StatelessWidget {
                 const Image(
                   image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
                 ),
-                FloatingActionButton(
+                IconButton(
+                  iconSize: 35,
+                  icon: const Icon(Icons.account_balance_wallet),
                   onPressed: () {
                     Navigator.pushNamed(context, '/IDSelectScreen');
+                    // ...
                   },
-                  child: const Text('Payment'),
                 ),
-                FloatingActionButton(
+                IconButton( // progress button
+                  iconSize: 35,
+                  icon: const Icon(Icons.bar_chart),
                   onPressed: () {
                     Navigator.pushNamed(context, '');
+                    // ...
                   },
-                  child: const Text('Progress'),
                 ),
-                FloatingActionButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/IDSelectScreen');
-                  },
-                  child: const Text('Home'),
-                ),
-                FloatingActionButton(
+                IconButton( // home button
+                  iconSize: 35,
+                  icon: const Icon(Icons.my_location),
                   onPressed: () {
                     Navigator.pushNamed(context, '');
+                    // ...
                   },
-                  child: const Text('Notifications'),
                 ),
-                FloatingActionButton(
+                IconButton( // notification button
+                  iconSize: 72,
+                  icon: const Icon(Icons.notifications),
                   onPressed: () {
                     Navigator.pushNamed(context, '');
+                    // ...
                   },
-                  child: const Text('Settings'),
+                ),
+                IconButton( // settings button
+                  iconSize: 72,
+                  icon: const Icon(Icons.settings),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '');
+                    // ...
+                  },
                 ),
               ],
             ),
