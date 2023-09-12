@@ -37,15 +37,7 @@ class _MyStatefulWidget  extends State<MySatefulWidget>{
       padding: const EdgeInsets.all(10),
       child: ListView(
         children: <Widget>[
-          Align(
-            alignment: Alignment.centerLeft,
-            child: TextButton(
-              child: const Text('<- Back', style: TextStyle(fontSize: 15)),
-              onPressed: () {
-                Navigator.pushNamed(context, '/home');
-              },
-            ),
-          ),
+
           Container(
             alignment: Alignment.center,
               padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),

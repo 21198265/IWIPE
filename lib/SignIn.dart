@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() async {
-  runApp(const SignIn());
-}
-
 class SignIn extends StatelessWidget {
   const SignIn({Key? key}) : super(key: key);
   static const String _title = 'IWipe';
@@ -40,15 +36,6 @@ class _MyStatefulWidget  extends State<MySatefulWidget>{
         padding: const EdgeInsets.all(10),
         child: ListView(
             children: <Widget>[
-              Align(
-                alignment: Alignment.centerLeft,
-                child: TextButton(
-                  child: const Text('<- Back', style: TextStyle(fontSize: 15)),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/home');
-                  },
-                ),
-              ),
               Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
