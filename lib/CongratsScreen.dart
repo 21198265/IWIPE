@@ -1,38 +1,6 @@
-import 'dart:async';
-import 'dart:io';
+
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/percent_indicator.dart';
-import 'package:device_preview/device_preview.dart';
 
-
-
-void main() async {
-  // runApp(DevicePreview(
-  //  enabled: true,
-  // builder: (context) => const MyApp(),
-  //));
-  runApp(const MyApp());
-}
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-  static const String _title = 'IWipe';
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: _title,
-      initialRoute: '/', // Specify the initial route
-      routes: {
-        '/': (context) => CongratsScreen(),
-        //'/Payment': (context) => PaymentScreen(),
-        //'/Notifications': (context) => NotificationScreen(),
-        //'/home': (context) => HomeScreen(),
-        //'/settings': (context) => settingsScreen(),
-        //'/Progress': (context) => ProgressScreen(),
-      },
-    );
-  }
-}
 
 class CongratsScreen extends StatelessWidget {
   const CongratsScreen({Key? key}) : super(key: key);

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:iwipe/PaymentInfo.dart';
 import 'SignIn.dart';
 import 'SignUp.dart';
+import 'LearningHome.dart';
 
 
 void main() async {
@@ -24,6 +26,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => const HomeScreen(),
         '/SignIn': (context) => const SignIn(),
         '/SignUp': (context) => const SignUp(),
+        '/LearningHome': (context) => const LearningHome(),
+        '/PaymentInfo': (context) => const PaymentInfo(),
       },
     );
   }

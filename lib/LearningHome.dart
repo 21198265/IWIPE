@@ -1,24 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
-class ModuleTemplate extends StatelessWidget {
-  const ModuleTemplate({Key? key}) : super(key: key);
+class LearningHome extends StatelessWidget {
+  const LearningHome({Key? key}) : super(key: key);
 
   get image => null;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-          appBar: AppBar(
-            title: const Text('Living room'),
-            backgroundColor: Color(0xffB8E28A),
-          ),
-          body: Padding(
-            padding: const EdgeInsets.all(10),
-            child: ListView(
-              children: <Widget>[
+      appBar: AppBar(
+        title: const Text('Living room'),
+        backgroundColor: Color(0xffB8E28A),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(10),
+        child: ListView(
+          children: [
+            Column(
+              children: [
                 const Image(
-                  image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+                  image: NetworkImage(
+                      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
                 ),
                 Container(
                   alignment: Alignment.center,
@@ -90,11 +93,12 @@ class ModuleTemplate extends StatelessWidget {
                   ),
                 ),
                 const Image(
-                  image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+                  image: NetworkImage(
+                      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
                 ),
                 FloatingActionButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/IDSelectScreen');
+                    Navigator.pushNamed(context, '/PaymentInfo');
                   },
                   child: const Text('Payment'),
                 ),
@@ -124,9 +128,9 @@ class ModuleTemplate extends StatelessWidget {
                 ),
               ],
             ),
-          ),
-
-
+          ],
+        ),
+      ),
     );
   }
 }
