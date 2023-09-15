@@ -96,36 +96,42 @@ class LearningHome extends StatelessWidget {
                   image: NetworkImage(
                       'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
                 ),
-                FloatingActionButton(
+                IconButton( // payment button
+                  iconSize: 72,
+                  icon: const Icon(Icons.wallet),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/PaymentInfo');
+                    Navigator.pushNamed(context, '/paymentScreen');
                   },
-                  child: const Text('Payment'),
                 ),
-                FloatingActionButton(
+                IconButton( // progress button
+                  iconSize: 72,
+                  icon: const Icon(Icons.bar_chart),
                   onPressed: () {
-                    Navigator.pushNamed(context, '');
+                    Navigator.pushNamed(context, '/progressScreen');
                   },
-                  child: const Text('Progress'),
                 ),
-                FloatingActionButton(
+                IconButton( // home button
+                  iconSize: 72,
+                  icon: const Icon(Icons.my_location),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/IDSelectScreen');
+                    Navigator.pushNamed(context, '/homeScreen');
                   },
-                  child: const Text('Home'),
                 ),
-                FloatingActionButton(
+                IconButton( // notification button
+                  iconSize: 72,
+                  icon: const Icon(Icons.notifications),
                   onPressed: () {
-                    Navigator.pushNamed(context, '');
+                    Navigator.pushNamed(context, '/NotificationScreen');
                   },
-                  child: const Text('Notifications'),
                 ),
-                FloatingActionButton(
+                IconButton( // settings button
+                  iconSize: 72,
+                  icon: const Icon(Icons.settings),
                   onPressed: () {
-                    Navigator.pushNamed(context, '');
+                    Navigator.pushNamed(context, '/settingsScreen');
+                    // ...
                   },
-                  child: const Text('Settings'),
-                ),
+                )
               ],
             ),
           ],
