@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class CongratsScreen extends StatelessWidget {
   const CongratsScreen({Key? key}) : super(key: key);
-  static const String _title = 'IWipe';
+  static const String _title = 'Certificate of Certification';
 
   get image => null;
 
@@ -30,7 +30,7 @@ class CongratsScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
                   child: const Text(
-                    'Congratulations, you have passed the test:',
+                    'Congratulations, you have passed the test, you are now IWipe certified, your badge will appear on your profile when registering on the Iwipe service provider platform',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w500,
@@ -41,35 +41,11 @@ class CongratsScreen extends StatelessWidget {
                 const Image(
                   image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
                 ),
-                FloatingActionButton(
+                ElevatedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/IDSelectScreen');
                   },
-                  child: const Text('Payment'),
-                ),
-                FloatingActionButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '');
-                  },
-                  child: const Text('Progress'),
-                ),
-                FloatingActionButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/IDSelectScreen');
-                  },
-                  child: const Text('Home'),
-                ),
-                FloatingActionButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '');
-                  },
-                  child: const Text('Notifications'),
-                ),
-                FloatingActionButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '');
-                  },
-                  child: const Text('Settings'),
+                  child: const Text('Continue'),
                 ),
               ],
             ),
