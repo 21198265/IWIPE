@@ -2,9 +2,10 @@
 import 'package:flutter/material.dart';
 
 
+
 class CongratsScreen extends StatelessWidget {
   const CongratsScreen({Key? key}) : super(key: key);
-  static const String _title = 'IWipe';
+
 
   get image => null;
 
