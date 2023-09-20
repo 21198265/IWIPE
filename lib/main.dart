@@ -30,12 +30,19 @@ class MyApp extends StatelessWidget {
             titleSpacing: 100,
             foregroundColor: Colors.black,
             backgroundColor: Color(0xffB8E28A),
+
             shape: RoundedRectangleBorder(
+
                 borderRadius:
                     BorderRadius.vertical(
-                        bottom: Radius.circular(30))),
+                        bottom: Radius.circular(30))
+
+            ),
+
             centerTitle: true,
-          )),
+          )
+
+      ),
 
       initialRoute: '/', // Specify the initial route
       routes: {
