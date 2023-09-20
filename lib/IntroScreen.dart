@@ -8,7 +8,6 @@ class IntroScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('iWIPE'),
-        backgroundColor:Colors.white,
         elevation: 0,
       ),
       body: Padding(

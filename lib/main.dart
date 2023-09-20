@@ -6,7 +6,6 @@ import 'LearningHome.dart';
 import 'Lesson.dart';
 import 'IntroScreen.dart';
 
-
 void main() async {
   //runApp(DevicePreview(
   // enabled: true,
@@ -25,8 +24,18 @@ class MyApp extends StatelessWidget {
       title: _title,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
-      ),
+          brightness: Brightness.light,
+          appBarTheme: AppBarTheme(
+            toolbarHeight: 100,
+            titleSpacing: 100,
+            foregroundColor: Colors.black,
+            backgroundColor: Color(0xffB8E28A),
+            shape: RoundedRectangleBorder(
+                borderRadius:
+                    BorderRadius.vertical(
+                        bottom: Radius.circular(30))),
+            centerTitle: true,
+          )),
 
       initialRoute: '/', // Specify the initial route
       routes: {
@@ -40,7 +49,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
-
-
