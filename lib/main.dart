@@ -4,7 +4,7 @@ import 'SignIn.dart';
 import 'SignUp.dart';
 import 'LearningHome.dart';
 import 'Lesson.dart';
-import 'HomeScreen.dart';
+import 'IntroScreen.dart';
 
 
 void main() async {
@@ -23,10 +23,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: _title,
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+
+      ),
 
       initialRoute: '/', // Specify the initial route
       routes: {
-        '/': (context) => const HomeScreen(),
+        '/': (context) => const IntroScreen(),
         '/SignIn': (context) => const SignIn(),
         '/SignUp': (context) => const SignUp(),
         '/LearningHome': (context) => const LearningHome(),

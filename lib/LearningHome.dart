@@ -135,7 +135,7 @@ class LearningHome extends StatelessWidget {
                   },
                   child: const Text('**TEST LESSONS**'),
                 ),
-                )
+
               ],
             ),
           ],
