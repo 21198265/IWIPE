@@ -92,10 +92,7 @@ class LearningHome extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Image(
-                  image: NetworkImage(
-                      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                ),
+                Image.asset('Assets/images/iWipe _man_without desk.ai'),
                 IconButton( // payment button
                   iconSize: 72,
                   icon: const Icon(Icons.wallet),
