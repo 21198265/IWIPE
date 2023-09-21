@@ -1,6 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
+import 'PaymentInfo.dart';
+import 'main.dart';
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+  static const String _title = 'IWipe';
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: _title,
+
+      initialRoute: '/', // Specify the initial route
+      routes: {
+        '/home': (context) => const HomeScreen(),
+        '/LearningHome': (context) => const LearningHome(),
+        '/Paymentinfo': (context) => const PaymentInfo(),
+      // '/Settings': (context) => const settings(),
+        // '/progress': (context) => const progress(),
+        // '/notifications': (context) => const notifications(),
+      },
+    );
+  }
+}
 class LearningHome extends StatelessWidget {
   const LearningHome({Key? key}) : super(key: key);
 
