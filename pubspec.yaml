@@ -19,6 +19,10 @@ dependencies:
   path:
   device_preview: ^1.1.0
   percent_indicator: ^4.2.3
+  cupertino_icons: ^1.0.2
+  #state management
+
+
 
 
 
@@ -27,7 +31,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^2.0.0
+
 
 
 flutter:

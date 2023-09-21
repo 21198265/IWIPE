@@ -152,7 +152,14 @@ class LearningHome extends StatelessWidget {
                     Navigator.pushNamed(context, '/settingsScreen');
                     // ...
                   },
-                )
+                ),
+                FloatingActionButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/Lesson');
+                  },
+                  child: const Text('**TEST LESSONS**'),
+                ),
+
               ],
             ),
           ],
