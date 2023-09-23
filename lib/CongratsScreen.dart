@@ -16,7 +16,7 @@ class CongratsScreen extends StatelessWidget {
         textDirection: TextDirection.ltr,
         child: Scaffold(
           appBar: AppBar(
-            title: const Text('Living room'),
+            title: const Text('Congratulations'),
             backgroundColor: Color(0xffB8E28A),
           ),
           body: Padding(
@@ -43,7 +43,7 @@ class CongratsScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/IDSelectScreen');
+                    Navigator.pushNamed(context, '');
                   },
                   child: const Text('Continue'),
                 ),
