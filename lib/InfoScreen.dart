@@ -2,9 +2,9 @@
 import 'package:flutter/material.dart';
 
 
-class CongratsScreen extends StatelessWidget {
-  const CongratsScreen({Key? key}) : super(key: key);
-  static const String _title = 'Certificate of Certification';
+class InfoScreen extends StatelessWidget {
+  const InfoScreen({Key? key}) : super(key: key);
+  static const String _title = 'Get Started';
 
   get image => null;
 
@@ -16,7 +16,7 @@ class CongratsScreen extends StatelessWidget {
         textDirection: TextDirection.ltr,
         child: Scaffold(
           appBar: AppBar(
-            title: const Text('Congratulations'),
+            title: const Text('Get Started!'),
             backgroundColor: Color(0xffB8E28A),
           ),
           body: Padding(
@@ -30,7 +30,7 @@ class CongratsScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
                   child: const Text(
-                    'Congratulations, you have passed the test, you are now IWipe certified, your badge will appear on your profile when registering on the Iwipe service provider platform',
+                    '',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w500,
@@ -38,14 +38,11 @@ class CongratsScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Image(
-                  image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '');
+                    Navigator.pushNamed(context, '/IDSelectScreen');
                   },
-                  child: const Text('Continue'),
+                  child: const Text('get Started'),
                 ),
               ],
             ),

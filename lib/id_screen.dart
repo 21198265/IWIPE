@@ -1,5 +1,22 @@
 import 'package:flutter/material.dart';
+import 'IDSelectScreen.dart';
 
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+  static const String _title = 'IWipe';
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: _title,
+
+      initialRoute: '/', // Specify the initial route
+      routes: {
+        '/idSelectScreen': (context) => const IDSelectScreen()
+      },
+    );
+  }
+}
 class IDScreen extends StatelessWidget {
   const IDScreen({Key? key}) : super(key: key);
 
