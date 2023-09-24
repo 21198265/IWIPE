@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iwipe/Templates/MainAppBar.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 class LearningHome extends StatelessWidget {
@@ -9,10 +10,8 @@ class LearningHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Living room'),
-        backgroundColor: Color(0xffB8E28A),
-      ),
+      appBar: MainAppBar(title: 'home'),
+
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: ListView(

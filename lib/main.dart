@@ -30,7 +30,6 @@ class MyApp extends StatelessWidget {
             titleSpacing: 100,
             foregroundColor: Colors.black,
             backgroundColor: Color(0xffB8E28A),
-
             shape: RoundedRectangleBorder(
 
                 borderRadius:
@@ -56,3 +55,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+

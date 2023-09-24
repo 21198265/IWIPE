@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Templates/MainAppBar.dart';
 
 class IDSelectScreen extends StatelessWidget {
   const IDSelectScreen({Key? key}) : super(key: key);
@@ -6,10 +7,7 @@ class IDSelectScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-          appBar: AppBar(
-            title: const Text('IWipe'),
-            backgroundColor: Color(0xffB8E28A),
-          ),
+          appBar: MainAppBar(title: 'Select ID',),
           body: Padding(
             padding: const EdgeInsets.all(10),
             child: ListView(

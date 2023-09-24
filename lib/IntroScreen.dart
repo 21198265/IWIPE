@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Templates/MainAppBar.dart';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({Key? key}) : super(key: key);
@@ -6,10 +7,7 @@ class IntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('iWIPE'),
-        elevation: 0,
-      ),
+      appBar: MainAppBar(title: 'Introduction'),
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: ListView(

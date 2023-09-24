@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Templates/MainAppBar.dart';
 
 class Lesson extends StatelessWidget {
   const Lesson ({super.key});
@@ -6,10 +7,7 @@ class Lesson extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('***LESSON NAME***'),
-
-      ),
+      appBar: MainAppBar(title: '**LESSON NAME**'),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
