@@ -46,10 +46,7 @@ class LearningHome extends StatelessWidget {
           children: [
             Column(
               children: [
-                const Image(
-                  image: NetworkImage(
-                      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                ),
+                Image.asset('LoungeRoom.jpg'),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),

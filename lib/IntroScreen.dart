@@ -12,7 +12,7 @@ class IntroScreen extends StatelessWidget {
         padding: const EdgeInsets.all(10),
         child: ListView(
           children: <Widget>[
-
+            Image.asset('Assets/images/iWipe _woman.ai'),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/SignIn');
