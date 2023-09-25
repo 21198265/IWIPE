@@ -23,9 +23,7 @@ class CongratsScreen extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             child: ListView(
               children: <Widget>[
-                const Image(
-                  image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                ),
+                Image.asset(''),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
@@ -38,9 +36,7 @@ class CongratsScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Image(
-                  image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                ),
+                Image.asset(''),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '');
