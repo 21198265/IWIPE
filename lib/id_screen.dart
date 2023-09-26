@@ -31,6 +31,7 @@ class IDScreen extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             child: ListView(
               children: <Widget>[
+                Image.asset(''),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
@@ -43,11 +44,12 @@ class IDScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                ElevatedButton(
+                IconButton( // notification button
+                  iconSize: 72,
+                  icon: const Icon(Icons.arrow_circle_right_outlined),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/IDSelectScreen');
+                    Navigator.pushNamed(context, '/NotificationScreen');
                   },
-                  child: const Text('Select ID'),
                 ),
                 ElevatedButton(
                   onPressed: () {

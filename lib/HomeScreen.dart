@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.all(10),
         child: ListView(
           children: [
-            Column(
+            Row(
               children: [
                 IconButton( // payment button
                   iconSize: 72,
