@@ -37,8 +37,12 @@ dev_dependencies:
 flutter:
   assets:
     - Assets/
-    - Assets/Images/
+    - Assets/Images/No_background_PNG/
     - Assets/Icons/
+    - Assets/Images/Man/
+    - Assets/Images/Man/Left/
+    - Assets/Images/Man/Right/
+    - Assets/Images/With_background_PNG/
 
   uses-material-design: true
 

@@ -110,7 +110,7 @@ class _MyStatefulWidget  extends State<MySatefulWidget>{
                     onPressed: (){
                       print(nameController.text);
                       print(passwordController.text);
-                      Navigator.pushNamed(context, "/LearningHome");
+                      Navigator.pushNamed(context, "/HomeScreen");
                     },
                   )
               ),
