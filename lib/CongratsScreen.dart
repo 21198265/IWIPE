@@ -1,6 +1,12 @@
-
 import 'package:flutter/material.dart';
 
+void main() async {
+  //runApp(DevicePreview(
+  // enabled: true,
+  //builder: (context) => const MyApp(),
+  //));
+  runApp(const CongratsScreen());
+}
 
 class CongratsScreen extends StatelessWidget {
   const CongratsScreen({Key? key}) : super(key: key);
@@ -23,7 +29,6 @@ class CongratsScreen extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             child: ListView(
               children: <Widget>[
-                Image.asset(''),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
@@ -36,7 +41,10 @@ class CongratsScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                Image.asset(''),
+                Container(
+                  child: Image.asset('assets/images/CongratsStamp.JPG'),
+                ),
+                // Image.asset('Assets/images/CongratsStamp.JPG'),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '');

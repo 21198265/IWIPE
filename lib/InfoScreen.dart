@@ -1,6 +1,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:iwipe/PaymentInfo.dart';
+void main() async {
+  //runApp(DevicePreview(
+  // enabled: true,
+  //builder: (context) => const MyApp(),
+  //));
+  runApp(const MyApp());
+}
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   static const String _title = 'IWipe';
@@ -38,7 +45,7 @@ class InfoScreen extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             child: ListView(
               children: <Widget>[
-                Image.asset('InfoImage.png'),
+                Image.asset('Assets/images/InfoImage.png'),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),

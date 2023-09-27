@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:iwipe/Templates/MainAppBar.dart';
+import 'package:iwipe/Templates/MainBottomNavBar.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 import 'PaymentInfo.dart';
 import 'main.dart';
 import 'package:iwipe/HomeScreen.dart';
-//import 'package:iwipe/settings.dart';
-//import 'package:iwipe/notifications.dart';
-//import 'package:iwipe/progress.dart';
-
+import 'package:iwipe/settings.dart';
+import 'package:iwipe/notifications.dart';
+import 'package:iwipe/progress.dart';
+void main() async {
+  //runApp(DevicePreview(
+  // enabled: true,
+  //builder: (context) => const MyApp(),
+  //));
+  runApp(const MyApp());
+}
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   static const String _title = 'IWipe';
@@ -23,9 +30,9 @@ class MyApp extends StatelessWidget {
         '/home': (context) => const HomeScreen(),
         '/LearningHome': (context) => const LearningHome(),
         '/Paymentinfo': (context) => const PaymentInfo(),
-      // '/Settings': (context) => const settings(),
-        // '/progress': (context) => const progress(),
-        // '/notifications': (context) => const notifications(),
+        '/Settings': (context) => const settings(),
+         '/progress': (context) => const progress(),
+         '/notifications': (context) => const notifications(),
       },
     );
   }
@@ -118,35 +125,35 @@ class LearningHome extends StatelessWidget {
                 ),
                 Image.asset('Assets/images/iWipe _man_without desk.ai'),
                 IconButton( // payment button
-                  iconSize: 72,
+                  iconSize: 35,
                   icon: const Icon(Icons.wallet),
                   onPressed: () {
                     Navigator.pushNamed(context, '/paymentScreen');
                   },
                 ),
                 IconButton( // progress button
-                  iconSize: 72,
+                  iconSize: 35,
                   icon: const Icon(Icons.bar_chart),
                   onPressed: () {
                     Navigator.pushNamed(context, '/progressScreen');
                   },
                 ),
                 IconButton( // home button
-                  iconSize: 72,
+                  iconSize: 35,
                   icon: const Icon(Icons.my_location),
                   onPressed: () {
                     Navigator.pushNamed(context, '/homeScreen');
                   },
                 ),
                 IconButton( // notification button
-                  iconSize: 72,
+                  iconSize: 35,
                   icon: const Icon(Icons.notifications),
                   onPressed: () {
                     Navigator.pushNamed(context, '/NotificationScreen');
                   },
                 ),
                 IconButton( // settings button
-                  iconSize: 72,
+                  iconSize: 35,
                   icon: const Icon(Icons.settings),
                   onPressed: () {
                     Navigator.pushNamed(context, '/settingsScreen');
