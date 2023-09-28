@@ -57,7 +57,8 @@ class MyApp extends StatelessWidget {
         '/Lesson': (lesson) => const Lesson(),
         '/id_screen':(context)  => const IDScreen(),
         '/IDSelectScreen':(context) => const IDSelectScreen(),
-        '/HomeScreen':(context) => const HomeScreen()
+        '/HomeScreen':(context) => const HomeScreen(),
+        '/CongratsScreen':(context) => const CongratsScreen(),
       },
     );
   }
