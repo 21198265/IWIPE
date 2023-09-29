@@ -40,7 +40,10 @@ class LearningHome extends StatelessWidget {
           children: [
             Column(
               children: [
-                Image.asset('LoungeRoom.jpg'),
+                Container(
+                    child: Image.asset('LoungeRoom.jpg'),
+                    height: 200
+                ),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
@@ -110,7 +113,10 @@ class LearningHome extends StatelessWidget {
                     ),
                   ),
                 ),
-                Image.asset('Assets/images/Man/Left/Man2_transparent.png'),
+                Container(
+                    child: Image.asset('Assets/images/Man/Left/Man2_transparent.png'),
+                    height: 150
+                ),
                 IconButton( // payment button
                   iconSize: 35,
                   icon: const Icon(Icons.wallet),

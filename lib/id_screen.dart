@@ -31,7 +31,10 @@ class IDScreen extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             child: ListView(
               children: <Widget>[
-                Image.asset('IDimage.jpg'),
+                Container(
+                  child:Image.asset('IDimage.jpg'),
+                  height: 300
+                ),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),

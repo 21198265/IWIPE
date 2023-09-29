@@ -9,6 +9,11 @@ import 'Lesson.dart';
 import 'IntroScreen.dart';
 import 'id_screen.dart';
 import 'CongratsScreen.dart';
+import 'progress.dart';
+import 'package:iwipe/settings.dart';
+import 'notifications.dart';
+import 'package:iwipe/CertTestPage.dart';
+import 'package:iwipe/InfoScreen.dart';
 
 void main() async {
   //runApp(DevicePreview(
@@ -59,6 +64,11 @@ class MyApp extends StatelessWidget {
         '/IDSelectScreen':(context) => const IDSelectScreen(),
         '/HomeScreen':(context) => const HomeScreen(),
         '/CongratsScreen':(context) => const CongratsScreen(),
+        '/settings':(context) => const settings(),
+        '/progress':(context) => const progress(),
+        '/notification':(context) => const notifications(),
+        '/certTestScreen':(context) => const CertTestScreen(),
+        '/infoScreen':(context) => const InfoScreen()
       },
     );
   }
