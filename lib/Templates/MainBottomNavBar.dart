@@ -2,20 +2,29 @@
 
 import 'package:flutter/material.dart';
 
-class MainBottomNavBar extends StatelessWidget {
-
+class MainBottomNavBar extends StatefulWidget {
+  const MainBottomNavBar({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return BottomNavigationBar(
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home)
+  State<MainBottomNavBar> createState() => _MainBottomNavBarState();
+}
 
-          )
-        ]);
+class _MainBottomNavBarState extends State<MainBottomNavBar> {
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.end,
+      children:[
+        //HERE IS WHERE THE BUTTONS GO
+      ]
+    );
   }
 }
+
+
+
+
+
 
 
 //To do
