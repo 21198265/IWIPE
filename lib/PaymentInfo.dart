@@ -10,7 +10,7 @@ class PaymentInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Living room'),
+        title: const Text('Payment Info'),
         backgroundColor: Color(0xffB8E28A),
       ),
       body: Column(children: [

@@ -1,7 +1,29 @@
 
 import 'package:flutter/material.dart';
+import 'package:iwipe/PaymentInfo.dart';
+void main() async {
+  //runApp(DevicePreview(
+  // enabled: true,
+  //builder: (context) => const MyApp(),
+  //));
+  runApp(const MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+  static const String _title = 'IWipe';
 
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: _title,
 
+      initialRoute: '/', // Specify the initial route
+      routes: {
+        '/Paymentinfo': (context) => const PaymentInfo(),
+      },
+    );
+  }
+}
 class InfoScreen extends StatelessWidget {
   const InfoScreen({Key? key}) : super(key: key);
   static const String _title = 'Get Started';
@@ -23,14 +45,24 @@ class InfoScreen extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             child: ListView(
               children: <Widget>[
-                const Image(
-                  image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+                Image.asset('Assets/images/InfoImage.png'),
+                Container(
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.all(10),
+                  child: const Text(
+                    'From Trainee to Entrepreneur',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 20,
+                    ),
+                  ),
                 ),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
                   child: const Text(
-                    '',
+                    'Start your journey towards becoming a successful cleaning professional',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w500,
@@ -40,7 +72,7 @@ class InfoScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/IDSelectScreen');
+                    Navigator.pushNamed(context, '/PaymentInfo');
                   },
                   child: const Text('get Started'),
                 ),

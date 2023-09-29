@@ -10,9 +10,19 @@ class IntroScreen extends StatelessWidget {
       appBar: MainAppBar(title: 'Introduction'),
       body: Padding(
         padding: const EdgeInsets.all(10),
-        child: ListView(
+        child: Column(
           children: <Widget>[
-
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/language');
+              },
+              child: const Text('change language'),
+            ),
+            Container(
+              child: Image.asset('assets/images/No_background_PNG/iWipe-_woman_3.png'),
+              height: 570
+            ),
+            //Image.asset('Assets/images/iWipe _woman.ai'),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/SignIn');

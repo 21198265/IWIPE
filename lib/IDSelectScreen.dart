@@ -12,6 +12,7 @@ class IDSelectScreen extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             child: ListView(
               children: <Widget>[
+                Image.asset(''),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),

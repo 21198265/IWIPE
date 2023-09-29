@@ -4,9 +4,9 @@ import 'package:percent_indicator/percent_indicator.dart';
 import 'PaymentInfo.dart';
 import 'main.dart';
 import 'package:iwipe/LearningHome.dart';
-import 'package:iwipe/settings.dart';
+import 'package:iwipe/homeScreen.dart';
 import 'package:iwipe/notifications.dart';
-import 'package:iwipe/progress.dart';
+import 'package:iwipe/settings.dart';
 
 
 
@@ -19,20 +19,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: _title,
 
-      // initialRoute: '/', // Specify the initial route
-      // routes: {
-      //  // '/home': (context) => const HomeScreen(),
-      //   '/LearningHome': (context) => const LearningHome(),
-      //   '/Paymentinfo': (context) => const PaymentInfo(),
-      //    '/Settings': (context) => const settings(),
-      //    '/progress': (context) => const progress(),
-      //    '/notifications': (context) => const notifications(),
-      // },
+      initialRoute: '/', // Specify the initial route
+      routes: {
+        '/home': (context) => const HomeScreen(),
+        '/LearningHome': (context) => const LearningHome(),
+        '/Paymentinfo': (context) => const PaymentInfo(),
+        '/Settings': (context) => const settings(),
+         '/progress': (context) => const progress(),
+         '/notifications': (context) => const notifications(),
+      },
     );
   }
 }
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class progress extends StatelessWidget {
+  const progress({Key? key}) : super(key: key);
 
   get image => null;
 
