@@ -117,6 +117,17 @@ class LearningHome extends StatelessWidget {
                     child: Image.asset('Assets/images/Man/Left/Man2_transparent.png'),
                     height: 150
                 ),
+
+                FloatingActionButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/Lesson');
+                  },
+                  child: const Text('**TEST LESSONS**'),
+                ),
+              ],
+            ),
+            Row(
+              children: [
                 IconButton( // payment button
                   iconSize: 35,
                   icon: const Icon(Icons.wallet),
@@ -153,14 +164,8 @@ class LearningHome extends StatelessWidget {
                     // ...
                   },
                 ),
-                FloatingActionButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/Lesson');
-                  },
-                  child: const Text('**TEST LESSONS**'),
-                ),
-              ],
-            ),
+              ]
+            )
           ],
         ),
       ),
