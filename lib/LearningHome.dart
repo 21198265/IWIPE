@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iwipe/Templates/MainAppBar.dart';
+import 'package:iwipe/Templates/MainBottomNavBar.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 
@@ -126,46 +127,47 @@ class LearningHome extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
-              children: [
-                IconButton( // payment button
-                  iconSize: 35,
-                  icon: const Icon(Icons.wallet),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/paymentScreen');
-                  },
-                ),
-                IconButton( // progress button
-                  iconSize: 35,
-                  icon: const Icon(Icons.bar_chart),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/progressScreen');
-                  },
-                ),
-                IconButton( // home button
-                  iconSize: 35,
-                  icon: const Icon(Icons.my_location),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/homeScreen');
-                  },
-                ),
-                IconButton( // notification button
-                  iconSize: 35,
-                  icon: const Icon(Icons.notifications),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/NotificationScreen');
-                  },
-                ),
-                IconButton( // settings button
-                  iconSize: 35,
-                  icon: const Icon(Icons.settings),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/settingsScreen');
-                    // ...
-                  },
-                ),
-              ]
-            )
+            MainBottomNavBar(),
+            // Row(
+            //   children: [
+            //     IconButton( // payment button
+            //       iconSize: 35,
+            //       icon: const Icon(Icons.wallet),
+            //       onPressed: () {
+            //         Navigator.pushNamed(context, '/paymentScreen');
+            //       },
+            //     ),
+            //     IconButton( // progress button
+            //       iconSize: 35,
+            //       icon: const Icon(Icons.bar_chart),
+            //       onPressed: () {
+            //         Navigator.pushNamed(context, '/progressScreen');
+            //       },
+            //     ),
+            //     IconButton( // home button
+            //       iconSize: 35,
+            //       icon: const Icon(Icons.my_location),
+            //       onPressed: () {
+            //         Navigator.pushNamed(context, '/homeScreen');
+            //       },
+            //     ),
+            //     IconButton( // notification button
+            //       iconSize: 35,
+            //       icon: const Icon(Icons.notifications),
+            //       onPressed: () {
+            //         Navigator.pushNamed(context, '/NotificationScreen');
+            //       },
+            //     ),
+            //     IconButton( // settings button
+            //       iconSize: 35,
+            //       icon: const Icon(Icons.settings),
+            //       onPressed: () {
+            //         Navigator.pushNamed(context, '/settingsScreen');
+            //         // ...
+            //       },
+            //     ),
+            //   ]
+            // )
           ],
         ),
       ),

@@ -1,5 +1,5 @@
 
-
+import 'package:iwipe/main.dart';
 import 'package:flutter/material.dart';
 
 class MainBottomNavBar extends StatefulWidget {
@@ -14,10 +14,45 @@ class _MainBottomNavBarState extends State<MainBottomNavBar> {
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.end,
-      children:[
-        //HERE IS WHERE THE BUTTONS GO
-      ]
-    );
+      children: <Widget> [
+              IconButton( // payment button
+                iconSize: 40,
+                icon: const Icon(Icons.wallet),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/PaymentInfo');
+                },
+              ),
+              IconButton( // progress button
+                iconSize: 40,
+                icon: const Icon(Icons.bar_chart),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/progress');
+                },
+              ),
+              IconButton( // home button
+                iconSize: 40,
+                icon: const Icon(Icons.my_location),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/HomeScreen');
+                },
+              ),
+              IconButton( // notification button
+                iconSize: 40,
+                icon: const Icon(Icons.notifications),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/notification');
+                },
+              ),
+              IconButton( // settings button
+                iconSize: 40,
+                icon: const Icon(Icons.settings),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/settings');
+                  // ...
+                },
+              ),
+            ]
+        );
   }
 }
 
