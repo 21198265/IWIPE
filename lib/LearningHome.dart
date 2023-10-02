@@ -34,6 +34,7 @@ class LearningHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MainAppBar(title: 'home'),
+      bottomNavigationBar: MainBottomNavBar(),
 
       body: Padding(
         padding: const EdgeInsets.all(10),
@@ -127,7 +128,7 @@ class LearningHome extends StatelessWidget {
                 ),
               ],
             ),
-            MainBottomNavBar(),
+
             // Row(
             //   children: [
             //     IconButton( // payment button
