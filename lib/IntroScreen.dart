@@ -8,31 +8,29 @@ class IntroScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MainAppBar(title: 'Introduction'),
-      body: Padding(
-          padding: const EdgeInsets.all(10),
-          child: Column(children: <Widget>[
-            Column(
-              children: <Widget>[
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/language');
-                  },
-                  child: const Text('change language'),
-                ),
-                Container(
-                    child: Image.asset(
-                        'assets/images/No_background_PNG/iWipe-_woman_3.png'),
-                    height: 100),
-                //Image.asset('Assets/images/iWipe _woman.ai'),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/SignIn');
-                  },
-                  child: const Text('Open Sign In Page'),
-                ),
-              ],
+      body: Column(
+        children: <Widget>[
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/language');
+            },
+            child: const Text('change language'),
+          ),
+          Container(
+            child: Image.asset(
+              'assets/images/iwipe_woman3.png',
+              fit: BoxFit.cover,
             ),
-          ])),
+          ),
+          //Image.asset('Assets/images/iWipe _woman.ai'),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/SignIn');
+            },
+            child: const Text('Open Sign In Page'),
+          ),
+        ],
+      ),
     );
   }
 }
