@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Templates/MainAppBar.dart';
+import 'widgets/MainAppBar.dart';
 
 class Lesson extends StatelessWidget {
   const Lesson ({super.key});

@@ -34,15 +34,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           brightness: Brightness.light,
-          appBarTheme: AppBarTheme(
-            toolbarHeight: 100,
-            titleSpacing: 100,
-            foregroundColor: Colors.black,
-            backgroundColor: Color(0xffB8E28A),
-
-
-            centerTitle: true,
-          )
+          // appBarTheme: AppBarTheme(
+          //   toolbarHeight: 100,
+          //   titleSpacing: 100,
+          //   foregroundColor: Colors.black,
+          //   backgroundColor: Color(0xffB8E28A),
+          //
+          //
+          //   centerTitle: true,
+          // )
 
       ),
 

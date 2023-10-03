@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:iwipe/Templates/MainAppBar.dart';
-import 'package:iwipe/Templates/MainBottomNavBar.dart';
+import 'widgets/MainAppBar.dart';
+import 'widgets/MainBottomNavBar.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 

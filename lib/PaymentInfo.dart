@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Templates/MainAppBar.dart';
-import 'Templates/MainBottomNavBar.dart';
+import 'widgets/MainAppBar.dart';
+import 'widgets/MainBottomNavBar.dart';
 
 
 class PaymentInfo extends StatelessWidget {
