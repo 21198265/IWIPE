@@ -11,9 +11,11 @@ class MainBottomNavBar extends StatelessWidget {
 
 
         destinations: const <Widget>[
+         // NavigationDestination(icon: Icon(Icons.wallet), label: ""),
           NavigationDestination(icon: Icon(Icons.bar_chart), label: ""),
           NavigationDestination(icon: Icon(Icons.my_location), label: ''),
-          NavigationDestination(icon: Icon(Icons.settings), label: "")
+        //  NavigationDestination(icon: Icon(Icons.notifications), label: ""),
+          NavigationDestination(icon: Icon(Icons.settings), label: ""),
 
 
         ],
@@ -21,14 +23,22 @@ class MainBottomNavBar extends StatelessWidget {
         //Probably a better way to associate destinations with indexes
         onDestinationSelected: (index)
       {
-        if(index == 0)
+        // if(index == 0)
+        //   {
+        //     Navigator.pushNamed(context, '/PaymentInfo');
+        //   }
+        if (index == 0)
           {
             Navigator.pushNamed(context, '/progress');
           }
         else if (index == 1)
-          {
-            Navigator.pushNamed(context, '/homeScreen');
-          }
+        {
+          Navigator.pushNamed(context, '/HomeScreen');
+        }
+        // else if (index == 2)
+        // {
+        //   Navigator.pushNamed(context, '/Notifications');
+        // }
         else if (index == 2)
         {
           Navigator.pushNamed(context, '/settings');

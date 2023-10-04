@@ -36,6 +36,11 @@ dev_dependencies:
 
 flutter:
   assets:
+    - assets/
+    - assets/images/
+    - assets/images/Man/left/
+    - assets/images/Man/right/
+    - assets/images/no_background/
     - assets/images/iwipe_woman3.png
 
 

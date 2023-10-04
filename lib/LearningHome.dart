@@ -43,8 +43,27 @@ class LearningHome extends StatelessWidget {
             Column(
               children: [
                 Container(
-                    child: Image.asset('LoungeRoom.jpg'),
-                    height: 200
+                    child: Image.asset(
+                      'assets/images/LoungeRoom.jpg',
+                      fit: BoxFit.cover,
+                      height: 300,
+                      width: 400,
+                    ),
+                ),
+                Align(
+                  alignment: Alignment(0, .2),
+                  child: FloatingActionButton(
+                    onPressed: () async {
+                    },
+                  ),
+                ),
+                Align(
+                  alignment: Alignment(0, .3),
+                  child: FloatingActionButton(
+                    onPressed: () async {
+
+                    },
+                  ),
                 ),
                 Container(
                   alignment: Alignment.center,
@@ -103,23 +122,6 @@ class LearningHome extends StatelessWidget {
                   backgroundColor: Colors.grey,
                   progressColor: Colors.green,
                 ),
-                Container(
-                  alignment: Alignment.center,
-                  padding: const EdgeInsets.all(10),
-                  child: const Text(
-                    'To see more, please click a button',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 30,
-                    ),
-                  ),
-                ),
-                Container(
-                    child: Image.asset('Assets/images/Man/Left/Man2_transparent.png'),
-                    height: 150
-                ),
-
                 FloatingActionButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/Lesson');
@@ -128,6 +130,30 @@ class LearningHome extends StatelessWidget {
                 ),
               ],
             ),
+            Row(
+              children:[
+                Container(
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.all(10),
+                  child: const Text(
+                    'To see more, please click a button',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 10,
+                    ),
+                  ),
+                ),
+
+                Container(
+                  child: Image.asset(
+                    'assets/images/Man/Left/Man2_transparent.png',
+                    fit: BoxFit.cover,
+                    height: 150,
+                  ),
+                ),
+              ]
+            )
 
             // Row(
             //   children: [

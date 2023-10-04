@@ -20,6 +20,7 @@ class IntroScreen extends StatelessWidget {
             child: Image.asset(
               'assets/images/iwipe_woman3.png',
               fit: BoxFit.cover,
+              height: 550,
             ),
           ),
           //Image.asset('Assets/images/iWipe _woman.ai'),
