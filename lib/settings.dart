@@ -19,6 +19,28 @@ class settings extends StatelessWidget {
         padding: const EdgeInsets.all(10),
         child: ListView(
           children: [
+            Column(
+              children:[
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '');
+                  },
+                  child: const Text('Language'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/SignIn');
+                  },
+                  child: const Text('Log out'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/SignIn');
+                  },
+                  child: const Text('audio'),
+                ),
+              ],
+            ),
           ],
         ),
       ),
