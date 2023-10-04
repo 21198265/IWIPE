@@ -18,7 +18,36 @@ class HomeScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: ListView(
-          children: [],
+          children: [
+            Column(
+              children:[
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '');
+                  },
+                  child: const Text('Bathroom'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/LearningHome');
+                  },
+                  child: const Text('Lounge Room'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/');
+                  },
+                  child: const Text('Kitchen'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/');
+                  },
+                  child: const Text('Chemicals'),
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
