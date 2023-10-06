@@ -42,29 +42,43 @@ class LearningHome extends StatelessWidget {
           children: [
             Column(
               children: [
-                Container(
-                    child: Image.asset(
-                      'assets/images/LoungeRoom.jpg',
-                      fit: BoxFit.cover,
-                      height: 300,
-                      width: 400,
-                    ),
-                ),
-                Align(
-                  alignment: Alignment(0, .2),
-                  child: FloatingActionButton(
-                    onPressed: () async {
-                    },
-                  ),
-                ),
-                Align(
-                  alignment: Alignment(0, .3),
-                  child: FloatingActionButton(
-                    onPressed: () async {
 
-                    },
-                  ),
+                Stack(
+                  children: <Widget>[
+                    Container(
+                      child: Image.asset(
+                        'assets/images/LoungeRoom.jpg',
+                        fit: BoxFit.cover,
+                        height: 300,
+                        width: 400,
+                      ),
+                    ),
+                    Container(
+                      alignment:Alignment.center,
+                      child:
+                      FloatingActionButton(
+                        onPressed: () async {
+
+                        },
+                      ),
+                    ),
+                  ]
                 ),
+                // Align(
+                //   alignment: Alignment(0, .2),
+                //   child: FloatingActionButton(
+                //     onPressed: () async {
+                //     },
+                //   ),
+                // ),
+                // Align(
+                //   alignment: Alignment(0, .3),
+                //   child: FloatingActionButton(
+                //     onPressed: () async {
+                //
+                //     },
+                //   ),
+                // ),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
@@ -147,7 +161,7 @@ class LearningHome extends StatelessWidget {
 
                 Container(
                   child: Image.asset(
-                    'assets/images/Man/Left/Man2_transparent.png',
+                    'assets/images/Man/Right/Man2_transparent.png',
                     fit: BoxFit.cover,
                     height: 150,
                   ),
