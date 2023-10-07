@@ -4,8 +4,8 @@ import 'package:iwipe/PaymentInfo.dart';
 import 'package:iwipe/homeScreen.dart';
 import 'SignIn.dart';
 import 'SignUp.dart';
-import 'LearningHome.dart';
-import 'Lesson.dart';
+import 'LoungeRoom.dart';
+import 'BathRoom.dart';
 import 'IntroScreen.dart';
 import 'id_screen.dart';
 import 'CongratsScreen.dart';
@@ -59,7 +59,7 @@ class MyApp extends StatelessWidget {
         '/SignUp': (context) => const SignUp(),
         '/LearningHome': (context) => const LearningHome(),
         '/PaymentInfo': (context) => const PaymentInfo(),
-        '/Lesson': (lesson) => const Lesson(),
+        '/BathRoom': (lesson) => const BathRoom(),
         '/id_screen':(context)  => const IDScreen(),
         '/IDSelectScreen':(context) => const IDSelectScreen(),
         '/homeScreen':(context) => const HomeScreen(),

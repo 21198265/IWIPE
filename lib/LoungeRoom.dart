@@ -42,7 +42,6 @@ class LearningHome extends StatelessWidget {
           children: [
             Column(
               children: [
-
                 Stack(
                   children: <Widget>[
                     Container(
@@ -55,6 +54,7 @@ class LearningHome extends StatelessWidget {
                     ),
                     Container(
                       alignment:Alignment.center,
+
                       child:
                       FloatingActionButton(
                         onPressed: () async {
@@ -136,16 +136,23 @@ class LearningHome extends StatelessWidget {
                   backgroundColor: Colors.grey,
                   progressColor: Colors.green,
                 ),
-                FloatingActionButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/Lesson');
-                  },
-                  child: const Text('**TEST LESSONS**'),
-                ),
+                // FloatingActionButton(
+                //   onPressed: () {
+                //     Navigator.pushNamed(context, '/Lesson');
+                //   },
+                //   child: const Text('**TEST LESSONS**'),
+                // ),
               ],
             ),
             Row(
               children:[
+                Container(
+                  child: Image.asset(
+                    'assets/images/Man/Right/Man2_transparent.png',
+                    fit: BoxFit.cover,
+                    height: 150,
+                  ),
+                ),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
@@ -154,16 +161,8 @@ class LearningHome extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w500,
-                      fontSize: 10,
+                      fontSize: 15,
                     ),
-                  ),
-                ),
-
-                Container(
-                  child: Image.asset(
-                    'assets/images/Man/Right/Man2_transparent.png',
-                    fit: BoxFit.cover,
-                    height: 150,
                   ),
                 ),
               ]

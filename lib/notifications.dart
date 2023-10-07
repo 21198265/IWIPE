@@ -3,7 +3,7 @@ import 'package:percent_indicator/percent_indicator.dart';
 
 import 'PaymentInfo.dart';
 import 'main.dart';
-import 'package:iwipe/LearningHome.dart';
+import 'package:iwipe/LoungeRoom.dart';
 import 'package:iwipe/settings.dart';
 import 'package:iwipe/homeScreen.dart';
 import 'package:iwipe/progress.dart';
