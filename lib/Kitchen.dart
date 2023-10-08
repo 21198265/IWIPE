@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'widgets/MainAppBar.dart';
-import 'widgets/MainBottomNavBar.dart';
+import 'package:iwipe/Templates/MainAppBar.dart';
+import 'package:iwipe/Templates/MainBottomNavBar.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 
@@ -25,15 +25,15 @@ import 'package:percent_indicator/percent_indicator.dart';
 //     );
 //   }
 // }
-class LearningHome extends StatelessWidget {
-  const LearningHome({Key? key}) : super(key: key);
+class Kitchen extends StatelessWidget {
+  const Kitchen({Key? key}) : super(key: key);
 
   get image => null;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MainAppBar(title: 'home'),
+      appBar: MainAppBar(title: 'Kitchen'),
       bottomNavigationBar: MainBottomNavBar(),
 
       body: Padding(
@@ -42,29 +42,43 @@ class LearningHome extends StatelessWidget {
           children: [
             Column(
               children: [
-                Container(
-                    child: Image.asset(
-                      'assets/images/LoungeRoom.jpg',
-                      fit: BoxFit.cover,
-                      height: 300,
-                      width: 400,
-                    ),
-                ),
-                Align(
-                  alignment: Alignment(0, .2),
-                  child: FloatingActionButton(
-                    onPressed: () async {
-                    },
-                  ),
-                ),
-                Align(
-                  alignment: Alignment(0, .3),
-                  child: FloatingActionButton(
-                    onPressed: () async {
+                Stack(
+                    children: <Widget>[
+                      Container(
+                        child: Image.asset(
+                          'assets/images/Kitchen.jpg',
+                          fit: BoxFit.cover,
+                          height: 300,
+                          width: 400,
+                        ),
+                      ),
+                      Container(
+                        alignment:Alignment.center,
 
-                    },
-                  ),
+                        child:
+                        FloatingActionButton(
+                          onPressed: () async {
+
+                          },
+                        ),
+                      ),
+                    ]
                 ),
+                // Align(
+                //   alignment: Alignment(0, .2),
+                //   child: FloatingActionButton(
+                //     onPressed: () async {
+                //     },
+                //   ),
+                // ),
+                // Align(
+                //   alignment: Alignment(0, .3),
+                //   child: FloatingActionButton(
+                //     onPressed: () async {
+                //
+                //     },
+                //   ),
+                // ),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
@@ -122,37 +136,36 @@ class LearningHome extends StatelessWidget {
                   backgroundColor: Colors.grey,
                   progressColor: Colors.green,
                 ),
-                FloatingActionButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/Lesson');
-                  },
-                  child: const Text('**TEST LESSONS**'),
-                ),
+                // FloatingActionButton(
+                //   onPressed: () {
+                //     Navigator.pushNamed(context, '/Lesson');
+                //   },
+                //   child: const Text('**TEST LESSONS**'),
+                // ),
               ],
             ),
             Row(
-              children:[
-                Container(
-                  alignment: Alignment.center,
-                  padding: const EdgeInsets.all(10),
-                  child: const Text(
-                    'To see more, please click a button',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 10,
+                children:[
+                  Container(
+                    child: Image.asset(
+                      'assets/images/Man/Right/Man2_transparent.png',
+                      fit: BoxFit.cover,
+                      height: 150,
                     ),
                   ),
-                ),
-
-                Container(
-                  child: Image.asset(
-                    'assets/images/Man/Left/Man2_transparent.png',
-                    fit: BoxFit.cover,
-                    height: 150,
+                  Container(
+                    alignment: Alignment.center,
+                    padding: const EdgeInsets.all(10),
+                    child: const Text(
+                      'To see more, please click a button',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 15,
+                      ),
+                    ),
                   ),
-                ),
-              ]
+                ]
             )
 
             // Row(

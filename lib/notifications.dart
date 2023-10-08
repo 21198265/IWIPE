@@ -1,11 +1,37 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
-import 'widgets/MainBottomNavBar.dart';
+import 'PaymentInfo.dart';
+import 'main.dart';
+import 'package:iwipe/LoungeRoom.dart';
+import 'package:iwipe/settings.dart';
+import 'package:iwipe/homeScreen.dart';
+import 'package:iwipe/progress.dart';
+import 'package:iwipe/Templates/MainBottomNavBar.dart';
 
 
 
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+  static const String _title = 'IWipe';
 
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: _title,
+
+      initialRoute: '/', // Specify the initial route
+      routes: {
+        '/home': (context) => const HomeScreen(),
+        '/LearningHome': (context) => const LearningHome(),
+        '/Paymentinfo': (context) => const PaymentInfo(),
+         '/Settings': (context) => const settings(),
+         '/progress': (context) => const progress(),
+         '/notifications': (context) => const notifications(),
+      },
+    );
+  }
+}
 class notifications extends StatelessWidget {
   const notifications({Key? key}) : super(key: key);
 

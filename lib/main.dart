@@ -4,14 +4,15 @@ import 'package:iwipe/PaymentInfo.dart';
 import 'package:iwipe/homeScreen.dart';
 import 'SignIn.dart';
 import 'SignUp.dart';
-import 'LearningHome.dart';
-import 'Lesson.dart';
+import 'LoungeRoom.dart';
+import 'BathRoom.dart';
 import 'IntroScreen.dart';
 import 'id_screen.dart';
 import 'CongratsScreen.dart';
 import 'progress.dart';
 import 'package:iwipe/settings.dart';
 import 'notifications.dart';
+import 'package:iwipe/SplashScreen.dart';
 import 'package:iwipe/CertTestPage.dart';
 import 'package:iwipe/InfoScreen.dart';
 
@@ -48,12 +49,12 @@ class MyApp extends StatelessWidget {
 
       initialRoute: '/', // Specify the initial route
       routes: {
-        '/': (context) => const HomeScreen(),
+        '/': (context) => const IntroScreen(),
         '/SignIn': (context) => const SignIn(),
         '/SignUp': (context) => const SignUp(),
         '/LearningHome': (context) => const LearningHome(),
         '/PaymentInfo': (context) => const PaymentInfo(),
-        '/Lesson': (lesson) => const Lesson(),
+        '/BathRoom': (lesson) => const BathRoom(),
         '/id_screen':(context)  => const IDScreen(),
         '/IDSelectScreen':(context) => const IDSelectScreen(),
         '/homeScreen':(context) => const HomeScreen(),
@@ -62,7 +63,8 @@ class MyApp extends StatelessWidget {
         '/progress':(context) => const progress(),
         '/notification':(context) => const notifications(),
         '/certTestScreen':(context) => const CertTestScreen(),
-        '/infoScreen':(context) => const InfoScreen()
+        '/infoScreen':(context) => const InfoScreen(),
+        '/splashScreen':(context) => const SplashScreen()
       },
     );
   }
