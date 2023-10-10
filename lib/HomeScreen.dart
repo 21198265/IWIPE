@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
               children:[
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '');
+                    Navigator.pushNamed(context, '/Bathroom');
                   },
                   child: const Text('Bathroom'),
                 ),
@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/');
+                    Navigator.pushNamed(context, '/Kitchen');
                   },
                   child: const Text('Kitchen'),
                 ),
