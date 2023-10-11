@@ -29,7 +29,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/LearningHome');
+                    Navigator.pushNamed(context, '/LoungeRoom');
                   },
                   child: const Text('Lounge Room'),
                 ),

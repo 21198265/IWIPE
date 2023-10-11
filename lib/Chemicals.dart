@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:iwipe/Templates/MainAppBar.dart';
-import 'package:iwipe/Templates/MainBottomNavBar.dart';
+import 'package:iwipe/widgets/MainAppBar.dart';
+import 'package:iwipe/widgets/MainBottomNavBar.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 class Chemicals extends StatelessWidget {
@@ -24,7 +24,7 @@ class Chemicals extends StatelessWidget {
                     children: <Widget>[
                       Container(
                         child: Image.asset(
-                          'assets/images/Kitchen.jpg',
+                          'assets/images/Chemicals2.jpg',
                           fit: BoxFit.cover,
                           height: 300,
                           width: 400,

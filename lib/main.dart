@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iwipe/IDSelectScreen.dart';
 import 'package:iwipe/PaymentInfo.dart';
 import 'package:iwipe/homeScreen.dart';
+import 'Kitchen.dart';
 import 'SignIn.dart';
 import 'SignUp.dart';
 import 'LoungeRoom.dart';
@@ -60,12 +61,14 @@ class MyApp extends StatelessWidget {
         '/IDSelectScreen':(context) => const IDSelectScreen(),
         '/HomeScreen':(context) => const HomeScreen(),
         '/congratsScreen':(context) => const CongratsScreen(),
+        '/LoungeRoom':(contect) => const LearningHome(),
         '/settings':(context) => const settings(),
         '/progress':(context) => const progress(),
         '/notification':(context) => const notifications(),
         '/certTestScreen':(context) => const CertTestScreen(),
         '/infoScreen':(context) => const InfoScreen(),
         '/splashScreen':(context) => const SplashScreen(),
+        '/Kitchen':(context) => const Kitchen(),
         '/Chemicals':(context) => const Chemicals(),
 
       },
