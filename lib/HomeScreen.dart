@@ -1,23 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-
-import 'PaymentInfo.dart';
 import 'main.dart';
-import 'package:iwipe/LearningHome.dart';
-import 'package:iwipe/settings.dart';
-import 'package:iwipe/notifications.dart';
-import 'package:iwipe/progress.dart';
-
-
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-  static const String _title = 'IWipe';
+import 'SignIn.dart';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: _title,
+      title: 'HomeScreen',
 
       // initialRoute: '/', // Specify the initial route
       // routes: {
@@ -30,12 +19,9 @@ class MyApp extends StatelessWidget {
       // },
     );
   }
-}
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
-
-  get image => null;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

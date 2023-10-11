@@ -14,35 +14,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  camera:
-  path_provider:
-  path:
-  device_preview: ^1.1.0
   percent_indicator: ^4.2.3
-  cupertino_icons: ^1.0.2
-  #state management
-
-
-
-
-
+  firebase_core: ^2.16.0
+  firebase_auth: ^4.10.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
-
-
 flutter:
-  assets:
-    - Assets/
-    - Assets/Images/No_background_PNG/
-    - Assets/Icons/
-    - Assets/Images/Man/
-    - Assets/Images/Man/Left/
-    - Assets/Images/Man/Right/
-    - Assets/Images/With_background_PNG/
 
   uses-material-design: true
 
