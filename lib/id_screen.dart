@@ -1,22 +1,7 @@
 import 'package:flutter/material.dart';
 import 'IDSelectScreen.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-  static const String _title = 'IWipe';
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: _title,
-
-      initialRoute: '/', // Specify the initial route
-      routes: {
-        '/idSelectScreen': (context) => const IDSelectScreen()
-      },
-    );
-  }
-}
 class IDScreen extends StatelessWidget {
   const IDScreen({Key? key}) : super(key: key);
 
@@ -31,7 +16,10 @@ class IDScreen extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             child: ListView(
               children: <Widget>[
-                Image.asset('IDimage.jpg'),
+                Container(
+                  child:Image.asset('IDimage.jpg'),
+                  height: 300
+                ),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),

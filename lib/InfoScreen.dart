@@ -45,7 +45,9 @@ class InfoScreen extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             child: ListView(
               children: <Widget>[
-                Image.asset('Assets/images/InfoImage.png'),
+                Container(
+                  child:Image.asset('Assets/images/InfoImage.png'),
+                ),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),

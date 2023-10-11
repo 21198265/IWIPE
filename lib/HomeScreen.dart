@@ -1,75 +1,49 @@
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/percent_indicator.dart';
-import 'main.dart';
-import 'SignIn.dart';
+import 'widgets/MainAppBar.dart';
+import 'widgets/MainBottomNavBar.dart';
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'HomeScreen',
-
-      // initialRoute: '/', // Specify the initial route
-      // routes: {
-      //  // '/home': (context) => const HomeScreen(),
-      //   '/LearningHome': (context) => const LearningHome(),
-      //   '/Paymentinfo': (context) => const PaymentInfo(),
-      //    '/Settings': (context) => const settings(),
-      //    '/progress': (context) => const progress(),
-      //    '/notifications': (context) => const notifications(),
-      // },
-    );
-  }
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
+
+  get image => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Living room'),
-        backgroundColor: Color(0xffB8E28A),
+      appBar: MainAppBar(
+        title: "Home",
       ),
+      bottomNavigationBar: MainBottomNavBar(),
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: ListView(
           children: [
-            Row(
-              children: [
-                IconButton( // payment button
-                  iconSize: 72,
-                  icon: const Icon(Icons.wallet),
+            Column(
+              children:[
+                ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/paymentScreen');
+                    Navigator.pushNamed(context, '/BathRoom');
                   },
+                  child: const Text('Bathroom'),
                 ),
-                IconButton( // progress button
-                  iconSize: 72,
-                  icon: const Icon(Icons.bar_chart),
+                ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/progressScreen');
+                    Navigator.pushNamed(context, '/LearningHome');
                   },
+                  child: const Text('Lounge Room'),
                 ),
-                IconButton( // home button
-                  iconSize: 72,
-                  icon: const Icon(Icons.my_location),
+                ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/homeScreen');
+                    Navigator.pushNamed(context, '/Kitchen');
                   },
+                  child: const Text('Kitchen'),
                 ),
-                IconButton( // notification button
-                  iconSize: 72,
-                  icon: const Icon(Icons.notifications),
+                ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/NotificationScreen');
+                    Navigator.pushNamed(context, '/Chemicals');
                   },
-                ),
-                IconButton( // settings button
-                  iconSize: 72,
-                  icon: const Icon(Icons.settings),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/settingsScreen');
-                    // ...
-                  },
+                  child: const Text('Chemicals'),
                 ),
               ],
             ),

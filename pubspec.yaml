@@ -17,12 +17,30 @@ dependencies:
   percent_indicator: ^4.2.3
   firebase_core: ^2.16.0
   firebase_auth: ^4.10.0
+  cupertino_icons: ^1.0.2
+  go_router: ^11.1.3
+  flutter_custom_clippers: ^2.1.0
+  #state management
+
+
+
+
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/Man/left/
+    - assets/images/Man/right/
+    - assets/images/no_background/
+    - assets/images/iwipe_woman3.png
+
+
 
   uses-material-design: true
 

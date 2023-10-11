@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart'; // Import Firebase Auth
 import 'main.dart';
 import 'SignUp.dart';
 import 'HomeScreen.dart';
+import 'widgets/MainAppBar.dart';
 
 class SignIn extends StatelessWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -10,12 +11,11 @@ class SignIn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(_title),
-        backgroundColor: Color(0xffB8E28A),
-      ),
-      body: const MyStatefulWidget(),
+    return  Scaffold(
+        appBar: MainAppBar(title: 'Sign In'),
+        body: const MyStatefulWidget(),
+
+
     );
   }
 }

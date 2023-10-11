@@ -4,11 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'SignIn.dart';
 import 'main.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(); // Initialize Firebase
-  runApp(const SignUp());
-}
+
 
 class SignUp extends StatelessWidget {
   const SignUp({Key? key}) : super(key: key);
@@ -16,21 +12,13 @@ class SignUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: _title,
-      routes: {
-        '/home': (context) => const Home(),
-        '/SignIn': (context) => const SignIn(),
-        '/SignUp': (context) => const SignUp(),
-      },
-      home: Scaffold(
+    return  Scaffold(
         appBar: AppBar(
           title: const Text(_title),
           backgroundColor: Color(0xffB8E28A),
         ),
         body: const MyStatefulWidget(),
-      ),
-    );
+      );
   }
 }
 

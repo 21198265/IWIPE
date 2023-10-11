@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'widgets/MainAppBar.dart';
+import 'widgets/MainBottomNavBar.dart';
 
 
 class PaymentInfo extends StatelessWidget {
@@ -9,10 +11,8 @@ class PaymentInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Payment Info'),
-        backgroundColor: Color(0xffB8E28A),
-      ),
+      appBar: MainAppBar(title: "Payment info"),
+      bottomNavigationBar: MainBottomNavBar(),
       body: Column(children: [
         Container(
           padding: const EdgeInsets.fromLTRB(30, 30, 0, 0),
@@ -21,7 +21,9 @@ class PaymentInfo extends StatelessWidget {
             style: TextStyle(fontSize: 20),
           ),
         ),
-        Container(),
+
+
+
       ]),
     );
   }
