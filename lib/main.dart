@@ -15,6 +15,7 @@ import 'notifications.dart';
 import 'package:iwipe/SplashScreen.dart';
 import 'package:iwipe/CertTestPage.dart';
 import 'package:iwipe/InfoScreen.dart';
+import 'Chemicals.dart';
 
 void main() async {
   //runApp(DevicePreview(
@@ -70,7 +71,9 @@ class MyApp extends StatelessWidget {
         '/notification':(context) => const notifications(),
         '/certTestScreen':(context) => const CertTestScreen(),
         '/infoScreen':(context) => const InfoScreen(),
-        '/splashScreen':(context) => const SplashScreen()
+        '/splashScreen':(context) => const SplashScreen(),
+        '/Chemicals':(context) => const Chemicals(),
+
       },
     );
   }

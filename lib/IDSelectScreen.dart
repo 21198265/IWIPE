@@ -27,19 +27,19 @@ class IDSelectScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '');
+                    Navigator.pushNamed(context, '/SplashScreen');
                   },
                   child: const Text('Drivers Licence'),
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '');
+                    Navigator.pushNamed(context, '/SplashScreen');
                   },
                   child: const Text('Passport'),
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '');
+                    Navigator.pushNamed(context, '/SplashScreen');
                   },
                   child: const Text('ID Card'),
                 ),
