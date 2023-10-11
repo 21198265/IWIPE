@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:iwipe/Templates/MainBottomNavBar.dart';
-import 'Templates/MainAppBar.dart';
+import 'widgets/MainBottomNavBar.dart';
+import 'widgets/MainAppBar.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 class CertTestScreen extends StatelessWidget {

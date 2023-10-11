@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'Test.dart';
 
 //controls state but not content
 
-class Module {
+class Test  {
   bool completion = false;
 }

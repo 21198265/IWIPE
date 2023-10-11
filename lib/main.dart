@@ -36,21 +36,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           brightness: Brightness.light,
-          appBarTheme: AppBarTheme(
-            toolbarHeight: 100,
-            titleSpacing: 100,
-            foregroundColor: Colors.black,
-            backgroundColor: Color(0xffB8E28A),
-            shape: RoundedRectangleBorder(
-
-                borderRadius:
-                    BorderRadius.vertical(
-                        bottom: Radius.circular(30))
-
-            ),
-
-            centerTitle: true,
-          )
+          // appBarTheme: AppBarTheme(
+          //   toolbarHeight: 100,
+          //   titleSpacing: 100,
+          //   foregroundColor: Colors.black,
+          //   backgroundColor: Color(0xffB8E28A),
+          //
+          //
+          //   centerTitle: true,
+          // )
 
       ),
 
@@ -59,12 +53,12 @@ class MyApp extends StatelessWidget {
         '/': (context) => const IntroScreen(),
         '/SignIn': (context) => const SignIn(),
         '/SignUp': (context) => const SignUp(),
-        '/LearningHome': (context) => const LearningHome(),
+
         '/PaymentInfo': (context) => const PaymentInfo(),
         '/BathRoom': (lesson) => const BathRoom(),
         '/id_screen':(context)  => const IDScreen(),
         '/IDSelectScreen':(context) => const IDSelectScreen(),
-        '/homeScreen':(context) => const HomeScreen(),
+        '/HomeScreen':(context) => const HomeScreen(),
         '/congratsScreen':(context) => const CongratsScreen(),
         '/settings':(context) => const settings(),
         '/progress':(context) => const progress(),
