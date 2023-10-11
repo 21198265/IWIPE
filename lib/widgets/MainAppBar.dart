@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 
 class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -11,11 +12,16 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
 
-    return AppBar(
+    return  AppBar(
 
-        title: Text(title),
 
-    );
+          title: Text(title),
+          backgroundColor: Color(0xffB8E28A),
+
+        );
+
+
+
   }
 }
 

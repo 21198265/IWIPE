@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Templates/MainAppBar.dart';
+
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({Key? key}) : super(key: key);
