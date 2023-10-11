@@ -24,7 +24,7 @@ class Chemicals extends StatelessWidget {
                     children: <Widget>[
                       Container(
                         child: Image.asset(
-                          'assets/images/Kitchen.jpg',
+                          'assets/images/Chemicals2.jpg',
                           fit: BoxFit.cover,
                           height: 300,
                           width: 400,
