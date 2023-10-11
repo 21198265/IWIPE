@@ -45,6 +45,12 @@ class HomeScreen extends StatelessWidget {
                   },
                   child: const Text('Chemicals'),
                 ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/CertTestPage');
+                  },
+                  child: const Text('Final Certification Test'),
+                ),
               ],
             ),
           ],
