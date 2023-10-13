@@ -22,11 +22,6 @@ dependencies:
   flutter_custom_clippers: ^2.1.0
   #state management
 
-
-
-
-
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -39,8 +34,6 @@ flutter:
     - assets/images/Man/right/
     - assets/images/no_background/
     - assets/images/iwipe_woman3.png
-
-
 
   uses-material-design: true
 

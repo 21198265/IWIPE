@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "257683712259",
+    "project_id": "iwipe-8f3de",
+    "storage_bucket": "iwipe-8f3de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257683712259:android:465765f4a7b7f19f2a6136",
+        "android_client_info": {
+          "package_name": "com.example.iwipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257683712259-kjfn5ubfte68pqghf72b6ubu41g644g7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIh5JJGlptpUZ5JUOgoxGApVNpuqKUGPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257683712259-kjfn5ubfte68pqghf72b6ubu41g644g7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "257683712259-qcbmtv0942jfvij6l7qhqd405cb5siqi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.iwipe"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
