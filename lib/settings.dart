@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'widgets/MainBottomNavBar.dart';
 import 'widgets/MainAppBar.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-
 import 'PaymentInfo.dart';
 import 'main.dart';
 import 'package:iwipe/notifications.dart';
