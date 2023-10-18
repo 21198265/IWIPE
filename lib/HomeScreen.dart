@@ -47,6 +47,12 @@ class HomeScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.pushNamed(context, '/IDSelectScreen');
+                },
+                    child: const Text('Verification'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
                     Navigator.pushNamed(context, '/certTestScreen');
                   },
                   child: const Text('Final Certification Test'),
