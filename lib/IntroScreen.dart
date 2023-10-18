@@ -20,40 +20,24 @@ class IntroScreen extends StatelessWidget {
       body: SafeArea(
         child: GestureDetector(
           behavior: HitTestBehavior.opaque,
-          onTap: () => Navigator.pushNamed(context, '/SignIn'),
-          child: Center(
-            child: Column(
-              children: <Widget>[
-                // ElevatedButton(
-                //   onPressed: () {
-                //     Navigator.pushNamed(context, '/language');
-                //   },
-                //   child: const Text('change language'),
-                // ),
+          onTap: () => Navigator.pushReplacementNamed(context, '/SignIn'),
+          child: Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+              opacity: 0.4,
+              image: AssetImage('assets/images/intro_background.jpg'),
+              fit: BoxFit.cover,
+            )),
 
-                Container(
-                  height: 80,
-                  width: double.infinity,
-                  color: Colors.white,
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      "iWipe training",
-                      style: TextStyle(fontSize: 35),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
+            child:
+              Center(
+                child: Text(
+                  "Welcome to iWipe",
+                  style: TextStyle(fontSize: 30),
+
                 ),
-                Expanded(
-                    child: Container(
-                  child: Image.asset(
-                    'assets/images/iwipe_woman3.png',
-                    fit: BoxFit.cover,
-                  ),
-                )),
-                //Image.asset('Assets/images/iWipe _woman.ai'),
-              ],
-            ),
+              )
+            //Image.asset('Assets/images/iWipe _woman.ai'),
           ),
         ),
       ),

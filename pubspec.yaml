@@ -37,6 +37,7 @@ flutter:
     - assets/images/Man/right/
     - assets/images/no_background/
     - assets/images/iwipe_woman3.png
+    - assets/images/intro_background.jpg
 
   uses-material-design: true
 
