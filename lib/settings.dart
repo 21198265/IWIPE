@@ -35,13 +35,13 @@ class settings extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/SignIn');
+                    Navigator.pushReplacementNamed(context, '/SignIn');
                   },
                   child: const Text('Log out'),
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/SignIn');
+                    Navigator.pushNamed(context, '');
                   },
                   child: const Text('audio'),
                 ),

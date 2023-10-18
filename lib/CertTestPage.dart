@@ -78,7 +78,7 @@ class CertTestScreen extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '');
+                Navigator.pushNamed(context, '/congratsScreen');
               },
               child: const Text('Next Question'),
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'Kitchen.dart';
 import 'SignIn.dart';
 import 'SignUp.dart';
 import 'LoungeRoom.dart';
@@ -69,7 +70,7 @@ class MyApp extends StatelessWidget {
         '/infoScreen':(context) => const InfoScreen(),
         '/splashScreen':(context) => const SplashScreen(),
         '/Chemicals':(context) => const Chemicals(),
-
+        '/Kitchen':(context) => const Kitchen(),
       },
     );
   }

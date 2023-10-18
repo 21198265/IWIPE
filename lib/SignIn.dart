@@ -125,7 +125,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                     // Login successful
                     print('Login successful: ${user.uid}');
                     // Redirect to the home screen or perform any desired action
-                    Navigator.pushReplacementNamed(context, 'HomeScreen');
+                    Navigator.pushReplacementNamed(context, '/HomeScreen');
                   }
                 } catch (e) {
                   // Handle login errors here
