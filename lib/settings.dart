@@ -34,7 +34,7 @@ class settings extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushReplacementNamed(context, '/SignIn');
+                    Navigator.pushNamedAndRemoveUntil(context, '/SignIn', (r) => false);
                   },
                   child: const Text('Log out'),
                 ),

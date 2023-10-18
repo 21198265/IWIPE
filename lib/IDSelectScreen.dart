@@ -51,6 +51,7 @@ class _IDSelectScreenState extends State<IDSelectScreen> {
     uploadTask.then((TaskSnapshot taskSnapshot) {
       // Image uploaded successfully.
       print('Image uploaded: ${taskSnapshot.ref.fullPath}');
+      Navigator.pushNamed(context, '/splashScreen');
     }).catchError((error) {
       // Handle upload errors.
       print('Error uploading image: $error');

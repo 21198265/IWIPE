@@ -155,7 +155,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                     // User registration successful
                     print('Registration successful: ${user.uid}');
                     // Redirect to the home screen or perform any desired action
-                    Navigator.pushNamed(context, '/SignIn');
+                    Navigator.pushNamed(context, '/id_screen');
                   }
                 } catch (e) {
                   // Handle registration errors here

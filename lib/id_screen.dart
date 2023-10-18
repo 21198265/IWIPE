@@ -17,7 +17,7 @@ class IDScreen extends StatelessWidget {
             child: ListView(
               children: <Widget>[
                 Container(
-                  child:Image.asset('IDimage.jpg'),
+                  child:Image.asset('assets/images/IDimage.JPG'),
                   height: 300
                 ),
                 Container(
@@ -36,7 +36,7 @@ class IDScreen extends StatelessWidget {
                   iconSize: 72,
                   icon: const Icon(Icons.arrow_circle_right_outlined),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/NotificationScreen');
+                    Navigator.pushNamed(context, '/IDSelectScreen');
                   },
                 ),
                 ElevatedButton(
